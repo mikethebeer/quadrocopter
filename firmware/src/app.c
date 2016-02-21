@@ -171,6 +171,13 @@ void APP_Tasks ( void )
 
 void TestLed(void)
 {
+    /*
+     * Thus each port is associated with three registers TRIS, PORT and LAT. 
+     * As before TRIS register determines the direction of each digital IO pin, 
+     * ie Input or Output. PORT register should be used to read data from Input 
+     * pins, ie it reads Actual Voltage Levels of the pins as in 16F. LAT 
+     * register is used to write data to Output pins. 
+     */
 	static int tick=0;
 	static int l=0;
 	TRISDbits.TRISD4=0;
