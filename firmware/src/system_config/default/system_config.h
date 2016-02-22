@@ -160,7 +160,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #define DRV_SPI_NUMBER_OF_MODULES		6
 /*** Driver Compilation and static configuration options. ***/
 /*** Select SPI compilation units.***/
-#define DRV_SPI_POLLED 				0
+#define DRV_SPI_POLLED 				1
 #define DRV_SPI_ISR 				0
 #define DRV_SPI_MASTER 				0
 #define DRV_SPI_SLAVE 				0

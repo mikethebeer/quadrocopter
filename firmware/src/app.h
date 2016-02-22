@@ -88,8 +88,9 @@ typedef enum
 {
 	/* Application's state machine's initial state. */
 	APP_STATE_INIT=0,
-	APP_STATE_TEST=1,
-
+	APP_STATE_READ_SENSOR=1,
+    APP_STATE_LED_CROSS=2,
+    APP_STATE_DATA_PUT=3,
 	/* TODO: Define states used by the application state machine. */
 
 } APP_STATES;
