@@ -32,4 +32,4 @@
 *.dSYM/
 
 #MPLAB project files
-#firmware/Copter.X/*
+#firmware/Copter.X/nbproject/*

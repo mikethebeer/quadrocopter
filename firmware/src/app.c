@@ -57,6 +57,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include <stdint.h>
 
 #include "app.h"
+#include "pwm_initialize.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -150,6 +151,11 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             DRV_SPI1_Initialize();
+            OSCILLATOR_Initialize();
+            PIN_MANAGER_Initialize();
+            TMR_Initialize();
+            PWM_Initialize();
+            
             /* Update the state to transfer data */
             appData.state = APP_STATE_DATA_PUT;
             break;
